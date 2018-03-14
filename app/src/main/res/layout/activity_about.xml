@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/listbck"
+    tools:context="com.example.juliousgill.rideme.AboutActivity">
+
+    <TextView
+        android:id="@+id/tx_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="10dp"
+        android:gravity="left"
+        android:text="This Application is build by JULIOUS GULSHAN using Android Studio Platform. This is my Mobile Application Indiviual assignment. I used udemy tutorial, stack overflow to build this Application. Please use each button to do testing on it."
+        android:textAppearance="?android:textAppearanceSmall"
+        android:textColor="@color/colorAccent" />
+
+</RelativeLayout>

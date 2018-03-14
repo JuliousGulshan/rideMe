@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/listbck">
+
+
+    <TextView
+        android:id="@+id/tx_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:gravity="center"
+        android:text="42"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <TextView
+        android:id="@+id/tx_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tx_number"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="left"
+        android:text="smithfield north"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <TextView
+        android:id="@+id/tx_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tx_name"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="left"
+        android:text="north"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <TextView
+        android:id="@+id/tx_position"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tx_address"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="left"
+        android:text="123 456"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <TextView
+        android:id="@+id/tx_position1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tx_position"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="left"
+        android:text="123 456"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@color/colorPrimaryDark" />
+
+
+    <TextView
+        android:id="@+id/tx_banking"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tx_position1"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="left"
+        android:text="true"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <TextView
+        android:id="@+id/tx_bonus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tx_banking"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="left"
+        android:text="north"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <TextView
+        android:id="@+id/tx_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tx_bonus"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="left"
+        android:text="north"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <TextView
+        android:id="@+id/tx_contract_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tx_status"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="left"
+        android:text="north"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@color/colorPrimaryDark" />
+
+
+    <TextView
+        android:id="@+id/tx_bike_stands"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tx_contract_name"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="left"
+        android:text="north"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@color/colorPrimaryDark" />
+
+
+    <TextView
+        android:id="@+id/tx_available_bike_stands"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tx_bike_stands"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="left"
+        android:text="north"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <TextView
+        android:id="@+id/tx_available_bikes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tx_available_bike_stands"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="left"
+        android:text="north"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <TextView
+        android:id="@+id/tx_last_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tx_available_bikes"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="left"
+        android:text="north"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@color/colorPrimaryDark" />
+
+
+</RelativeLayout>
