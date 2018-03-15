@@ -13,11 +13,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by JuliousGill(15969) on 06/03/2018.
+ * Created by Julious Gulshan(15969) on 06/03/2018.
  */
 
 public class ContactAdapter extends ArrayAdapter {
 
+    //creating array
     List list = new ArrayList();
 
     public ContactAdapter(@NonNull Context context, int resource) {
@@ -25,7 +26,6 @@ public class ContactAdapter extends ArrayAdapter {
     }
 
     //adding objects to list
-
     public void add(Contacts object) {
         super.add(object);
         list.add(object);
@@ -33,11 +33,13 @@ public class ContactAdapter extends ArrayAdapter {
 
     }
 
+    //count the list size
     @Override
     public int getCount() {
         return list.size();
     }
 
+    //getting item inside the position eg: lat,lng
     @Nullable
     @Override
     public Object getItem(int position) {
@@ -52,6 +54,7 @@ public class ContactAdapter extends ArrayAdapter {
         row = convertView;
         ContactHolder contactHolder;
 
+        //condition in list view
         if(row==null)
         {
             LayoutInflater layoutInflater = (LayoutInflater)this.getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
@@ -104,6 +107,7 @@ public class ContactAdapter extends ArrayAdapter {
         return row;
     }
 
+    //constructor
     static class ContactHolder
     {
         TextView tx_number,tx_name,tx_address,tx_position,tx_position1,tx_banking,tx_bonus,

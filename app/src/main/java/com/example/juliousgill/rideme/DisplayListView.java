@@ -18,7 +18,6 @@ import org.json.JSONObject;
 public class DisplayListView extends AppCompatActivity {
 
     //variables
-
     String json_string;
     JSONObject jsonObject;
     JSONArray jsonArray;
@@ -32,15 +31,17 @@ public class DisplayListView extends AppCompatActivity {
 
         listView = (ListView) findViewById(R.id.listview);
 
-       //attaching adapter to the list view
+        //attaching adapter to the list view
         contactAdapter = new ContactAdapter(this,R.layout.row_layout);
         listView.setAdapter(contactAdapter);
 
+        //open the fetched json file into new intent with list view
         json_string = getIntent().getExtras().getString("json_data");
 
+        //try & catch method
         try {
 
-
+            //converting json array into json objects
             JSONArray json = new JSONArray(json_string);
 
 
@@ -52,15 +53,15 @@ public class DisplayListView extends AppCompatActivity {
             {
                 JSONObject JO = json.getJSONObject(count);
 
+                //splitting the position into latitude and longitude
                 JSONObject jb = JO.getJSONObject("position");
 
                 jb.get("lat");
                 jb.get("lng");
 
-//                Log.i("latitude", jb.getString("lat"));
+               //Log.i("latitude", jb.getString("lat"));
 
-
-
+                //Adding values to Contacts activity arrays
                 Contacts.myLat.add((double)jb.get("lat"));
                 Contacts.myLng.add((double)jb.get("lng"));
                 Contacts.myName.add((String)JO.get("name"));
@@ -69,13 +70,12 @@ public class DisplayListView extends AppCompatActivity {
 
 
 
-
                 number = JO.getString("number");
                 name = JO.getString("name");
                 address = JO.getString("address");
 
-                position= jb.getString("lat");
-                position1 = jb.getString("lng");
+                position= jb.getString("lat"); //latitude
+                position1 = jb.getString("lng"); //longitude
 
                 banking = JO.getString("banking");
                 bonus = JO.getString("bonus");

@@ -53,10 +53,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mMap = googleMap;
 
 
-        for(int i = 0; i < Contacts.myLat.size(); i++) //getting from contacts arrays
+        for(int i = 0; i < Contacts.myLat.size(); i++) //getting from contacts arrays.
 
-            //all latitude and longitiude is added from the arrays we created in conctacts activity and title as well from name array
-
+            //all latitude and longitude is added from the arrays we created in contacts activity and title as well from name array.
             mMap.addMarker(new MarkerOptions().position(new LatLng(Contacts.myLat.get(i), Contacts.myLng.get(i))).title(Contacts.myName.get(i)));
 
             //i applied manually lat and lng of dublin for zoom on it.

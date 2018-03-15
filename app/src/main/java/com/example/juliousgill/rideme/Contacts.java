@@ -3,7 +3,7 @@ package com.example.juliousgill.rideme;
 import java.util.ArrayList;
 
 /**
- * Created by JuliousGill(15969) on 06/03/2018.
+ * Created by Julious Gulshan(15969) on 06/03/2018.
  */
 
 public class Contacts {
@@ -14,9 +14,9 @@ public class Contacts {
     public static ArrayList<String> myName = new ArrayList<>();
 
 
+    //variables
     private String number,name,address,position,position1,banking,bonus,status,contract_name,
             bike_stands,available_bike_stands,available_bikes,last_update;
-
 
 
 
@@ -25,6 +25,7 @@ public class Contacts {
                     String available_bike_stands, String available_bikes, String last_update)
 
 
+            //methods
     {
         this.setNumber(number);
         this.setName(name);
@@ -44,7 +45,7 @@ public class Contacts {
 
     }
 
-//generate getter and setter
+    //generate getter and setter
 
     public String getPosition1() { return position1;}
 

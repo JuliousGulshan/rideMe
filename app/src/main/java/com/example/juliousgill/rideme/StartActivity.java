@@ -20,21 +20,21 @@ public class StartActivity extends AppCompatActivity {
 
     }
 
-    //when display list view button is clicked open list view activity
+    //when display list view button is clicked open list view activity(onclick Method).
     public void displayListView (View view){
 
             startActivity(new Intent(StartActivity.this,MainActivity.class));
 
          }
 
-    //when display map view button is clicked open map view activity
+    //when display map view button is clicked open map view activity(onclick Method).
         public void displayMapView (View view){
 
             startActivity(new Intent(StartActivity.this,MapsActivity.class));
 
         }
 
-    //when display list about button is clicked open about view activity
+    //when display list about button is clicked open about view activity(onclick Method).
     public void displayAboutView (View view){
 
         startActivity(new Intent(StartActivity.this,AboutActivity.class));

@@ -19,9 +19,12 @@ import java.util.Locale;
  */
 
 public class Function {
+
+    //weather api url
     private static final String OPEN_WEATHER_MAP_URL =
             "http://api.openweathermap.org/data/2.5/weather?lat=%s&lon=%s&units=metric";
 
+    //api key inserted to get weather of dublin
     private static final String OPEN_WEATHER_MAP_API = "b18c1ada7fbee7bece15cdb81962716e";
 
     //condition for weather icon

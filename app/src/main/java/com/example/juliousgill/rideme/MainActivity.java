@@ -19,7 +19,7 @@ import java.net.URL;
 import javax.net.ssl.HttpsURLConnection;
 
 /**
- * Created by JuliousGill(15969) on 06/03/2018.
+ * Created by Julious Gulshan(15969) on 06/03/2018.
  */
 
 public class MainActivity extends Activity {
@@ -51,6 +51,7 @@ public class MainActivity extends Activity {
         protected void onPreExecute() {
             super.onPreExecute();
 
+            //url for fetching the dublin bike json data using the api key
             json_url="https://api.jcdecaux.com/vls/v1/stations?contract=Dublin&apiKey=10bc395ff68754278f775a6a9459c544454ced1c";
         }
 
@@ -90,6 +91,7 @@ public class MainActivity extends Activity {
             super.onProgressUpdate(values);
         }
 
+        //saving the fetched data in json_string.
         @Override
         protected void onPostExecute(String result) {
             TextView textView = findViewById(R.id.textview);

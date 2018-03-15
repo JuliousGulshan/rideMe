@@ -4,7 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 /**
- * Created by JuliousGill(15969) on 11/03/2018.
+ * Created by Julious Gulshan(15969) on 11/03/2018.
  */
 
 public class AboutActivity extends AppCompatActivity {
